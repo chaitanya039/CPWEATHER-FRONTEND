@@ -1,0 +1,86 @@
+.gallery
+{
+    .primary-section
+    {
+        background: url('../../images/gallery.jpg') center 15% / cover no-repeat padding-box border-box scroll;
+    }
+}
+
+.gallery-section
+{
+    @include grid(30rem);
+    gap: 2.25rem;
+    padding: 4rem 5%;
+    // background-color: $light-purple;
+    // box-shadow: 0 0 5rem rgb(182, 141, 182) inset;
+        
+    .box
+    {
+        position: relative;
+        top: 0;
+        left: 0;
+        z-index: 2;
+        width: 100%;
+        height: 100%;
+        
+        
+        img
+        {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: .5rem;
+        }
+
+        .desc
+        {
+            font-size: 1.35rem;
+            color: $white;
+            font-family: $font-lato;
+            line-height: 2;
+            font-weight: 700;
+            position: absolute;
+            left: 0%;
+            bottom: 0%;
+            padding: 2rem;
+            z-index: 2;
+        }
+    }
+}
+
+// Pagination Style.
+
+.pagination
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    // padding: 2rem 0 .75rem 0;
+
+    span
+    {
+        font-size: 1.85rem;
+    }
+
+    #paginate-btn
+    {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: $black;
+        padding: .5rem 1.15rem;
+
+        &.active
+        {
+            color: $white;
+            background: $black;
+        }
+
+        &:hover
+        {
+            color: $white;
+            background: $black;
+        }
+    }
+}

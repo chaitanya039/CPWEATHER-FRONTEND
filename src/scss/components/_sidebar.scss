@@ -1,0 +1,103 @@
+.sidebar
+{
+    &__element:first-child
+    {
+        border-top-left-radius: .56rem;
+        border-top-right-radius: .56rem;
+    }
+    
+    &__element:last-child
+    {
+        border-bottom-left-radius: .56rem;
+        border-bottom-right-radius: .56rem;
+    }
+    
+    .upload{
+        position: relative;
+        width: 15rem;
+        height: 15rem;
+        padding: 2rem 0 1.5rem 0;
+        margin: auto;
+        text-align: center;
+      }
+      
+      .upload img{
+        width: 11rem;
+        height: 11rem;
+        border-radius: 50%;
+        border: .75rem solid $gray150;
+        object-fit: cover;
+      }
+      
+      .upload .round{
+        position: absolute;
+        bottom: 15px;
+        right: 20px;
+        background: #4294FF;
+        border-radius: 50%;
+        overflow: hidden;
+        padding: 1rem;
+        border: .2rem solid $white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        i
+        {
+            color: $white;
+            font-size: 1.65rem;
+        }
+      }
+      
+      .upload .round input[type = "file"]{
+        position: absolute;
+        transform: scale(2);
+        opacity: 0;
+      }
+      
+      input[type=file]{
+          cursor: pointer;
+      }
+    
+    &__element
+    {
+        background: $white;
+        text-align: left;
+        border: 1px solid $silver;
+        
+        h3
+        {
+            color: $white;
+            font-size: 1.5rem;
+            padding: 1.65rem;
+            background-color: $dark-color;
+            border-top-left-radius: .56rem;
+            border-top-right-radius: .56rem;
+        }
+        
+        .blog-link
+        {
+            border-bottom-left-radius: .56rem;
+            border-bottom-right-radius: .56rem;
+        }
+        
+        a {
+            display: block;
+            color: $black;
+            font-size: 1.25rem;
+            text-transform: uppercase;
+            font-family: $font-mont;
+            padding: 1.65rem !important;
+            font-weight: 800;
+            color: $black;
+            
+            &:hover
+            {
+                background-color: $gray200;
+            }
+        }
+        
+        
+        
+    }
+}

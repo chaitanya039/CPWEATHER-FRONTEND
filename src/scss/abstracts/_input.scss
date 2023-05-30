@@ -1,0 +1,30 @@
+.group
+{
+    padding: .25rem;
+    
+    label
+    {
+        width: 100%;
+        color: #333;
+        font-weight: 600;
+        line-height: 2;
+        display: block;
+        margin-bottom: 1rem;
+        font-size: 1.3rem;
+    }
+    
+    input, textarea
+    {
+        padding: 1.3rem 1.5rem;
+        background: $gray150;
+        color: $black;
+        display: block;
+        width: 100%;
+        border-bottom: 3px solid transparent;
+        
+        &:focus
+        {
+            border-bottom-color: $main-color;
+        }
+    }
+}

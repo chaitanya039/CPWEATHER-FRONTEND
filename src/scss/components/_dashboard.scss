@@ -1,0 +1,191 @@
+.dashboard-container
+{
+    width: 100vw;
+    min-height: 100vh;
+    background-color: $lighter-purple;
+    padding-top: 2rem;
+    
+    .dashboard-section
+    {
+        .settings
+        {
+            flex: 1 1 30rem;
+        }
+        .posts-container
+        {
+            flex: 1 1 60rem;
+            
+            &.updateName
+            {
+                background-color: $white;
+                padding: 3rem;
+                box-shadow: 0 0 45rem rgba(0, 0, 0, 0.05);
+                
+                .img-container
+                {
+                    width: 100%;
+                    height: 100%;
+                    text-align: center;
+                    padding: 1rem 0 2rem 0;
+                    
+                    img
+                    {
+                        width: 12rem;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+                
+                .group
+                {
+                    input
+                    {
+                        padding: 1.2rem 1.4rem;
+                        font-size: 1.3rem;
+                    }
+                }
+            }
+            
+            .dashboard__posts:first-child
+            {
+                border-top-left-radius: .56rem;
+                border-top-right-radius: .56rem;
+            }
+            
+            .dashboard__posts:nth-child(3)
+            {
+                border-bottom-left-radius: .56rem;
+                border-bottom-right-radius: .56rem;
+            }
+            .dashboard__posts
+            {
+                background: $white;
+                padding: 2rem 1.5rem;
+                border: 1px solid $silver;
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                flex-wrap: wrap;
+                @media (max-width : 550px) {
+                    
+                    justify-content: center;
+                    padding: 3rem !important;
+                    
+                    &__image
+                    {
+                        width: 100%;
+                        height: 70%;
+                        
+                        img
+                        {
+                            width: 100% !important;
+                            height: 100% !important;
+                            border-radius: 0% !important;
+                            object-fit: cover;
+                        }
+                    }
+                    
+                    &__title
+                    {
+                        margin-left: 0 !important;
+                        margin-top: 1.5rem;
+                        text-align: center;
+                        
+                        p
+                        {
+                            width: 90%;
+                            margin-top: .2rem !important;
+                        }
+                        
+                        div
+                        {
+                            margin-top: 1.5rem !important;
+                            margin-left: auto;
+                            margin-right: auto;
+                        }
+                        
+                    }
+                    
+                    &__operations
+                    {
+                        text-align: center !important;
+                        margin-top: 2.35rem;
+                        
+                        .icon
+                        {
+                            font-size: 3.75rem !important;
+                        }
+                    }
+                }
+                
+                &__image
+                {
+                    img
+                    {
+                        width: 7.5rem;
+                        height: 7.5rem;
+                        object-fit: cover;
+                        border-radius: 50%;
+                    }
+                }
+                
+                &__title
+                {
+                    flex: 1 1 40rem;
+                    width: 100%;
+                    margin-left: 2.75rem;
+                    
+                    a
+                    {
+                        text-decoration: none;
+                        font-size: 1.75rem;
+                        font-weight: 650;
+                        color: $black;
+                    }
+                    
+                    p
+                    {
+                        color: $light-black;
+                        font-size: 1.15rem;
+                        line-height: 1.5;
+                        margin: .5rem auto .5rem auto;
+                    }
+                    
+                    div
+                    {
+                        width: fit-content;
+                        margin-top: .9rem;
+                        padding: .5rem 1rem;
+                        border-radius: .5rem;
+                        background-color: rgb(255, 235, 226);
+                        color: $secondary-color;
+                        font-weight: 600;
+                    }
+                }
+                
+                &__operations
+                {
+                    flex: 1 1 15rem;
+                    text-align: right;
+                    
+                    .icon
+                    {
+                        font-size: 3.35rem;
+                        color: $black;
+                        background-color: $gray150;
+                        padding: .9rem;
+                        border-radius: .5rem;
+                        box-shadow: .07rem .07rem .15rem .1rem rgba(0, 0, 0, 0.1);
+                        
+                        &:hover
+                        {
+                            color: $white;
+                           background-color: $black;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,90 @@
+/* <== Reset scss files ==> */
+
+// base file
+@import "scss/base/reset";
+
+
+/* <== Abstracts scss files ==> */
+
+@import "scss/abstracts/extends";
+
+// variables
+@import "scss/abstracts/variables";
+
+// btn
+@import "scss/abstracts/btn";
+
+// Headings
+@import "scss/abstracts/headings";
+
+// Section
+@import "scss/abstracts/section";
+
+// Inputs
+@import "scss/abstracts/input";
+
+
+/* <== Components scss files ==> */
+
+// Navbar
+@import "scss/components/navbar";
+
+// Modal
+@import "scss/components/modal";
+
+// Footer
+@import "scss/components/footer";
+
+// Home page.
+@import "scss/components/home";
+
+// Register and login page.
+@import "scss/components/registerLogin";
+
+// Current temperature of city page.
+@import "scss/components/temperature";
+
+// Current temperature of city page.
+@import "scss/components/temperature";
+
+// Weather casting for city page.
+@import "scss/components/weatherForecast";
+
+// Weather casting for city page.
+@import "scss/components/weatherForecastSearch";
+
+// Weather Gallery page.
+@import "scss/components/weatherGallery";
+
+// Air Pollution page.
+@import "scss/components/airPollution";
+
+// News Section Page.
+@import "scss/components/news";
+
+// Not found page Section.
+@import "scss/components/notFound";
+
+// Create Post page Section.
+@import "scss/components/createPost";
+@import "scss/components/dashboard";
+@import "scss/components/loader";
+@import "scss/components/sidebar";
+@import "scss/components/postpagination";
+@import "scss/components/travelLog";
+
+
+
+// section
+
+section
+{
+    padding: 2rem 9%;
+}
+
+@media (max-width: 768px)
+{
+    section{
+        padding: 2rem 3%;
+    }
+}

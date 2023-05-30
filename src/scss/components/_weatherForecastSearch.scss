@@ -1,0 +1,18 @@
+.forecast-search-container
+{
+    .primary-section
+    {
+        background: url('../../images/bg1.jpg') center 95% / cover no-repeat scroll;
+    }
+
+    .note
+    {
+        marquee
+        {
+            background:url("../../images/unsplash3.jpg") center center / cover scroll;
+            color: maroon;
+            border-bottom: .05rem solid lightpink;
+            box-shadow: 0 0 5rem 1rem rgba(254, 172, 229, 0.3) inset;
+        }
+    }
+}

@@ -1,0 +1,50 @@
+.postpagination
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 3rem auto;
+    background: transparent;
+    
+    li:first-child
+    {
+        border-left: 2px solid $main-color !important;
+        border-top-left-radius: .5rem;
+        border-bottom-left-radius: .5rem;
+    }
+    
+    li:last-child
+    {
+        border-top-right-radius: .5rem;
+        border-bottom-right-radius: .5rem;
+    }
+    
+    li
+    {
+        list-style-type: none;
+        display: block;
+        padding: .5rem;
+        border: 2px solid $main-color;
+        border-left: none;
+        
+        &:hover, &.active
+        {
+            background-color: $main-color;
+            color: $white;
+            
+            a
+            {
+                color: $white;
+            }
+        }
+        
+        a
+        {
+            font-size: 1.64rem;
+            font-weight: 700;
+            padding: 1.35rem;
+            color: $main-color;
+        }
+    }
+}

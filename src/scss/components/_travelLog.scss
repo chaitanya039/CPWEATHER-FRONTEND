@@ -1,0 +1,134 @@
+.marker-card
+{
+    padding: 1rem;
+    width: 30rem;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 1.5rem;
+    position: relative;
+    
+    .title-desc
+    {
+        
+        &:first-child
+        {
+            .desc
+            {
+                font-size: 1.4rem;
+                font-weight: 800;
+                color: $pink;
+            }
+        }
+        
+        &:last-child
+        {
+            .desc
+            {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                font-size: 1.1rem;
+                padding-top: .2rem;
+                div
+                {
+                    padding: .3rem 1rem;
+                    border-radius: .5rem;
+                    background-color: rgb(255, 235, 226);
+                    color: $secondary-color;
+                    font-weight: 600;
+                }
+            }
+        }
+        
+        &:nth-child(3)
+        {
+            .desc
+            {
+                padding-top: .5rem;
+            }
+        }
+        
+        .title
+        {
+            font-size: 1.3rem;
+            padding-bottom: .5rem;
+            font-family: $font-mont;
+            color: rgb(2, 2, 150);
+            font-weight: 700;
+            margin-bottom: .95rem;
+            border-bottom: 1px solid rgb(2, 2, 150);
+        }
+        
+        .desc
+        {
+            font-family: $font-mont;
+            font-size: 1.25rem;
+            font-weight: 600;
+            
+            .star
+            {
+                color: goldenrod;
+                font-size: 2.3rem;
+                margin-right: 1.15rem;
+            }
+        }
+    }
+}
+
+.add-pin-form
+{
+    padding: 1rem;
+    width: 30rem;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 1.5rem;
+    position: relative;
+    
+    .label-input
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        gap: .35rem;
+        
+        label
+        {
+            font-size: 1.3rem;
+            padding-bottom: .5rem;
+            font-family: $font-mont;
+            color: rgb(2, 2, 150);
+            font-weight: 700;
+            margin-bottom: .95rem;
+            border-bottom: 1px solid rgb(2, 2, 150);
+        }
+        
+        input, textarea, select
+        {
+            font-family: $font-mont;
+            font-size: 1.25rem;
+            font-weight: 600;
+            padding: .75rem 1rem;
+            border: 1px solid $light-black;
+            
+            &[type = "submit"]
+            {
+                background-color: orangered;
+                border: 1px solid $white;
+                color: $white;
+                padding: 1rem;
+                font-weight: 700;
+                text-transform: uppercase;
+                
+                &:hover
+                {
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+    
+}

@@ -1,0 +1,67 @@
+.create-container
+{
+    width: 100vw;
+    min-height: 100vh;
+    background-color: $lighter-purple;
+    padding-top: 2rem;
+    text-transform: none !important;
+    
+    .row
+    {
+        .form-container
+        {
+            flex: 1 1 45rem;
+            background-color: $white;
+            padding: 3rem;
+            box-shadow: 0 0 45rem rgba(0, 0, 0, 0.05);
+        }  
+            .form-card
+            {
+                h3
+                {
+                    font-size: 1.8rem;
+                    line-height: 2;
+                    font-family: $font-mont;
+                    font-weight: 800;
+                    margin-bottom: 2.2rem;
+                    text-transform: uppercase;
+                    color: $light-black;
+                }
+                
+                form
+                {
+                    #image
+                    {
+                        display: none;
+                    }
+                    
+                    .image_label
+                    {
+                        background-color: $light-pink;
+                        color: $white;
+                        padding: .75rem 1.5rem;
+                        border-radius: .5rem;
+                        cursor: pointer;
+                        background-color: $main-color;                
+                    }
+                    
+                    input:focus
+                    {
+                        border-bottom-color: $main-color;
+                    }
+                    
+                    .img_container
+                    {
+                        width: 100%;
+                        height: 100%;
+                        
+                        img
+                        {
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                }
+            }
+    }
+}

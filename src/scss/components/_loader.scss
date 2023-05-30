@@ -1,0 +1,30 @@
+.loader__container
+{
+    @extend %fixed-position;
+    @extend %flex-center;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+    
+    &__item
+    {
+        width: 5.5rem;
+        height: 5.5rem;
+        border-radius: 50%;
+        border-top: .4rem dotted $white;
+        border-left: .4rem dotted $white;
+        border-bottom: .4rem dotted $white;
+        border-right: .4rem solid transparent;
+        animation: loader .5s linear infinite;
+        z-index: 10000;
+        
+        @keyframes loader {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+        
+    }
+}

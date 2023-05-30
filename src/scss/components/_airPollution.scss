@@ -1,0 +1,223 @@
+.air-pollution-section
+{
+
+    .primary-section
+    {
+        background: url('../../images/weather-gallery.jpg') center 55% / cover no-repeat padding-box border-box scroll;
+    }
+
+    .temp-body-section
+    {
+        table
+        {
+            width: 80%;
+            border-collapse: collapse;
+            box-shadow: 0 .4rem 1rem rgba(0, 0, 0, 0.15);
+            background-color: $white;
+            text-align: left;
+            overflow: hidden;
+            margin: 0rem auto;
+            margin-top: 5rem !important;
+            z-index: -1;
+
+            thead
+            {
+                box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.15);
+                background-color: #34495e;
+                color: $white;
+
+                th
+                {
+                    text-align: center !important;
+                    padding: 1.35rem 2.5rem;
+                    text-transform: uppercase;
+                    font-size: 1.5rem;
+                    font-weight: 900;
+                    letter-spacing: 0.07rem;
+                }
+            }
+
+            tbody
+            {
+                padding: 1rem;
+                td
+                {
+                    padding: 1.75rem 2.75rem;
+                    font-size: 1.6rem;
+                    font-weight : 600;
+                    text-align: center;
+                    text-transform: none;
+                }
+
+                .email
+                {
+                    background-color: #e4e9ff;
+                    padding: .7rem 1rem;
+                    color: #0101b9;
+                    border-radius: .5rem;
+                    font-size: 1.45rem;
+                }
+
+                .op
+                {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-around;
+                    font-size: 1.6rem;
+
+                    i
+                    {
+                        &:hover
+                        {
+                            cursor: pointer;
+                        }
+                    }
+
+                    .fa-pencil
+                    {
+                        color: $main-color;
+                    }
+
+                    .fa-trash
+                    {
+                        color: red;
+                    }
+                }
+            }
+
+            tr:nth-child(even)
+            {
+                background-color: $gray150;
+            }
+        }
+
+        // Marquee Tag.
+
+        .note
+        {
+            marquee
+            {
+                width: 80%;
+                margin: 5rem auto;
+                border-radius: 5rem;
+                box-shadow: none;
+                border: none;
+                font-weight: 800;
+
+                &.good
+                {
+                    color: green;
+                    background: rgb(221, 241, 221);
+                }
+
+                &.fair
+                {
+                    color: darkblue;
+                    background: rgb(234, 234, 255);
+                }
+
+                &.moderate
+                {
+                    color: $pink;
+                    background: #fedbe1;
+                }
+
+                &.poor
+                {
+                    color: red;
+                    background: rgb(251, 233, 233);
+                }
+
+                &.verypoor
+                {
+                    color: crimson;
+                    background: rgb(240, 221, 225);
+                }
+
+                span
+                {
+                    text-transform: uppercase;
+                }
+            }
+        }
+
+        // media queries
+
+        @media (max-width : 1380px)
+        {
+            table
+            {
+                width: 90%;
+            }
+            .note
+            {
+                marquee
+                {
+                    width: 90%;
+                }
+            }
+        }
+
+        @media (max-width : 850px)
+        {
+            table
+            {
+                display: block;
+                width: 90%;
+                text-align: right;
+
+                td
+                {
+                    position: relative;
+
+                    &::before
+                    {
+                        content: attr(data-label);
+                        position: absolute;
+                        left: 2%;
+                        width: 50%;
+                        text-align: left;
+                        color: #34495e;
+                        font-weight: 800;
+                    }
+                }
+
+                tbody, tr, td
+                {
+                    display: block;
+                    width: 100%;
+                }
+
+                tbody
+                {
+                    padding: 0;
+                    tr
+                    {
+                        padding: 1rem;
+                        border: .15rem solid $light-blue;
+
+                        td
+                        {
+                            text-align: right;
+                            color: #16a085;
+                            font-weight: 800;
+                            font-size: 1.5rem;
+                            font-family: $font-oswald;
+                        }
+                    }
+                    .op
+                    {
+                        justify-content: flex-end;
+                        gap: 2rem;
+                    }
+                }
+            }
+            thead
+            {
+
+                display: none;
+            }
+        }
+    }
+
+}

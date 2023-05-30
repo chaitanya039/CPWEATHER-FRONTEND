@@ -1,0 +1,221 @@
+
+.note
+{
+    marquee
+    {
+        display: block;
+        text-transform: uppercase !important;
+        padding: 1.15rem 3rem;
+        font-size: 1.3rem;
+        font-family: $font-poppin;
+        letter-spacing: .05rem;
+        word-spacing: 2.5px;
+        font-weight: 700;
+        background: #2c3e50;
+        position: relative;
+        top: 0;
+        left: 0;
+        color: $white;
+        border-top: .05rem solid white;
+        box-shadow: 0 0 5rem 1rem rgba(172, 228, 254, 0.3) inset;
+        border-bottom: .05rem inset $white;
+    }
+}
+
+.temp-body-section
+{
+    padding: 2.5% 2.5%;
+
+    
+    .head
+    {
+        padding: 3rem 0;
+
+        .desc
+        {
+            font-size: 1.2rem;
+            color: #777;
+            font-family: $font-antiqua;
+            font-weight: 600;
+            text-transform: none !important;
+            text-align: center;
+        }
+
+        .main
+        {
+            text-transform: none !important;
+            font-size: 2.5rem;
+            line-height: 2;
+            font-weight: 700;
+            // font-family: $font-mont;
+            letter-spacing: .08rem;
+            position: relative;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+
+            &::before
+            {
+                content: "";
+                position: absolute;
+                bottom: -30%;
+                width: 150px;
+                height: 3.5px;
+                border-radius: 100%;
+                background: linear-gradient(90deg, rgba(59,5,117,1) 6%, rgba(209,0,255,1) 100%);
+                margin: 0rem auto;
+
+                @media (min-width : 992px) 
+                {
+                    width: 170px;
+                }
+
+                @media (max-width : 500px) 
+                {
+                    width: 130px;
+                }
+            }
+        }
+    }
+
+    .main-body
+    {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 2rem;
+        margin-top: 3rem;
+        gap: 1.5rem;
+
+        .content
+        {
+            flex: 1 1 45rem;
+            background: linear-gradient(#2C3E50, #222f3e);
+            padding: 2.5rem;
+            font-family: $font-mont;
+            font-size: 1.7rem;
+            color: $white;
+            border-radius: .25rem;
+            box-shadow: 0rem 0rem 5rem 0rem rgba(0, 0, 0, .2);
+            border: .1rem solid $white;
+
+            .day-date
+            {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 0rem .75rem 2.25rem .75rem;
+                border-bottom: .1rem solid $white;
+                font-weight: 500;
+            }
+
+
+            .name-icon
+            {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 2rem 1.75rem 0rem 1.75rem;
+                font-size: 2.5rem;
+                font-weight: 700;
+            }
+
+            .temp-desc
+            {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 2rem 1.75rem 2.8rem 1.75rem;
+
+                .temp
+                {
+                    font-size: 4rem;
+                }
+                .desc
+                {
+                    font-size: 1.75rem;
+                    font-family: $font-antiqua;
+                    text-transform: uppercase;
+                    font-weight: 600;
+                }
+            }
+
+            .details
+            {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 2.5rem 1.75rem 0rem 1.75rem;
+                font-size: 1.5rem;
+                font-weight: 500;
+                line-height: 2;
+                border-top: .1rem solid $white;
+
+                p
+                {
+                    font-family: $font-oswald;
+                }
+
+                .detail-1
+                {
+                    text-align: left;
+                }
+
+                .detail-2
+                {
+                    text-align: right;
+                }
+                
+            }
+
+            // Media Queries.
+
+            @media (max-width : 450px) 
+            {
+                .name-icon
+                {
+                    padding: 2rem 0rem 0rem 0rem !important;
+
+                    
+                }
+
+                .temp-desc
+                {
+                    padding: 2rem 0 1.5rem 0 !important;
+                    .desc
+                    {
+                        font-size: 1.2rem !important;
+                        font-weight: 700 !important;
+                    }
+                }
+
+                .details
+                {
+                    padding: 2.5rem 0 2rem 0 !important;
+                    font-size: 1.35rem;
+                }
+            }
+        }
+        .map    
+        {
+            flex: 1 1 45rem;
+            border-radius: .25rem;
+            box-shadow: 0rem 0rem 5rem 0rem rgba(0, 0, 0, .2);
+            border: .1rem solid $white;
+        }
+    }
+
+    
+}
+
+@media (max-width : 450px) 
+{
+
+    .temp-body-section
+    {
+        padding: 2.5% 0%;
+    }
+}
